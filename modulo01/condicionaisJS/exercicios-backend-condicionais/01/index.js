@@ -1,15 +1,18 @@
-const jogada1 = "tesoura"
-const jogada2 = "tesoura"
+const jogada1 = "Tesoura"
+const jogada2 = "pedra"
 
 //seu código aqui
 
-if (jogada1 === jogada2) {
+if (jogada1.toUpperCase() === jogada2.toUpperCase()) {
   console.log(`Empate!`);
-} else if ((jogada1 == "pedra" && jogada2 == "tesoura") || (jogada2 == "pedra" && jogada1 == "tesoura")) {
-  console.log("Pedra ganha de Tesoura");
-} else if ((jogada1 == "papel" && jogada2 == "pedra") || (jogada2 == "papel" && jogada1 == "pedra")) {
-  console.log("Papel ganha de Pedra");
-} else if ((jogada1 == "tesoura" && jogada2 == "papel") || (jogada2 == "tesoura" && jogada1 == "papel")) {
+} else if ((jogada1.toUpperCase() == "PEDRA" && jogada2.toUpperCase() == "TESOURA") || 
+(jogada2.toUpperCase() == "PEDRA" && jogada1.toUpperCase() == "TESOURA")) {
+  console.log("PEDRA ganha de Tesoura");
+} else if ((jogada1.toUpperCase() == "PAPEL" && jogada2.toUpperCase() == "PEDRA") || 
+(jogada2.toUpperCase() == "PAPEL" && jogada1.toUpperCase() == "PEDRA")) {
+  console.log("Papel ganha de PEDRA");
+} else if ((jogada1.toUpperCase() == "TESOURA" && jogada2.toUpperCase() == "PAPEL") || 
+(jogada2.toUpperCase() == "TESOURA" && jogada1.toUpperCase() == "PAPEL")) {
   console.log("Tesoura ganha de Papel");
 } else {
   console.log("Valor digitado é inválido");
